@@ -7,6 +7,7 @@ export function personsFetchSuccess(users) {
   }
 };
 
+
 //export const setUsers = (users) => ({type: SET_USERS, users});
 
 export function personFetchData(url){
@@ -22,7 +23,9 @@ export function personFetchData(url){
   }
 }
 
-let initialState = [];
+let initialState = {
+
+}
 
 const clientReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -32,5 +35,8 @@ const clientReducer = (state = initialState, action) => {
       return state;
   }
 };
+/*
+export const setFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
+export const setUsers = (users) => ({type: SET_USERS, users});*/
 
 export default clientReducer

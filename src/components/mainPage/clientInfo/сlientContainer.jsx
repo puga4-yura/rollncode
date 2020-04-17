@@ -4,16 +4,18 @@ import Clients from "./client"
 import {setUsers, personFetchData} from "../../../redux/clients-reducer";
 
 let mapStateToProps = (state) => {
+  debugger;
   return {
-    results: state.results
+    //results: state,
+    state:state
 
   }
 };
-let mapDispatchToProps = (dispatch) => {
-  return {
-    fetchData: url => {dispatch(personFetchData(url))}
-  }
+ let mapDispatchToProps = (dispatch) => {
+   return {
+     fetchData: url => {dispatch(personFetchData(url))}
+   }
 
-}
+ }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Clients)

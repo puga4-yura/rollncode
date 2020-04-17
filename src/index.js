@@ -20,7 +20,7 @@ let store =  createStore(
 /*export let rerenderEntireTree = (state) => {*/
   ReactDOM.render(
     <Provider store={store}>
-      <App/>,
+        <App/>,
     </Provider>,
     document.getElementById('root'));
 /*
