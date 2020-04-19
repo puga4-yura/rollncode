@@ -34,7 +34,6 @@ function App(props) {
         </div>
 
     </div>
-    </BrowserRouter>
   );
 }
 
